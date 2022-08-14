@@ -1,0 +1,215 @@
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    height: 49px;
+    justify-content: center;
+    background-color: #232323;
+    border: 0px solid rgb(73, 70, 70);
+    border-width: 0px 0px 1px 0px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.start {
+    flex: 1;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    padding-left: 11px;
+}
+
+.mort-img {
+    width: 40px;
+    height: 40px;
+}
+
+.label {
+    color: bisque;
+    font-size: 20px;
+}
+
+.middle {
+    display: flex;
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar-container {
+    display: flex;
+    flex: 1;
+    border: 1px solid rgb(73, 70, 70);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+    .search-bar-container:hover {
+        border: 1px solid transparent;
+    }
+
+.search-bar {
+    flex: 1;
+    height: 25px;
+    background-color: rgb(34, 33, 33);
+    border: 0.001px solid transparent;
+    border-radius: 20px 0px 0px 20px;
+    padding-left: 10px;
+    color: rgb(162, 152, 152);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif, Times, serif;
+    font-size: 18px;
+}
+
+    .search-bar::placeholder {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif, Times, serif;
+        font-size: 18px;
+        color: rgba(162, 152, 152, 0.845);
+        padding-left: 2px;
+    }
+
+    .search-bar:focus {
+        outline: none;
+    }
+
+        .search-bar:focus::placeholder {
+            color: transparent;
+        }
+
+    .search-bar:hover {
+        background-color: rgb(49, 47, 47);
+        transition: 0.3s;
+    }
+
+.search-button {
+    width: 60px;
+    height: 28px;
+    margin-left: -2px;
+    background-color: rgb(73, 70, 70);
+    border: 0px solid rgb(73, 70, 70);
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .search-button:hover {
+        background-color: rgb(58, 55, 55);
+        transition: 0.3s;
+    }
+
+    .search-button:active {
+        background-color: rgb(33, 31, 31);
+        transition: 0.2s;
+    }
+
+.end {
+    display: flex;
+    flex: 1;
+    width: 200px;
+    justify-content: end;
+    align-items: center;
+}
+
+    .end div {
+        align-items: center;
+    }
+
+.bx-search {
+    font-size: 22px;
+}
+
+.bx-bell, .bx-user {
+    font-size: 20px;
+    color: rgb(165, 172, 172);
+}
+
+
+.nav-bar .bxs-down-arrow {
+    font-size: 10px;
+    margin-right: 20px;
+    margin-left: 2px;
+    color: rgb(165, 172, 172);
+}
+
+.currency-name {
+    font-size: 15px;
+    color: rgb(165, 172, 172);
+}
+
+.bxs-dollar-circle {
+    color: rgb(165, 172, 172);
+    margin-right: 2px;
+    font-size: 17px
+}
+
+.language-name {
+    font-size: 15px;
+    color: rgb(165, 172, 172);
+}
+
+.notification-container, .chooselang-container, .account-container, .choosecurrency-container {
+    margin-left: 20px;
+}
+
+.search-form {
+    display: flex;
+}
+
+.account-container {
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    margin-right: 25px;
+}
+
+
+
+.dropdown-content {
+    margin-top: 92px;
+    display: none;
+    position: absolute;
+    width: 70px;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+    background-color: rgb(58, 55, 55);
+    right: -17px;
+    border-radius: 3px
+}
+
+.account-container:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    color: aliceblue;
+    padding: 5px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.dc-a:hover {
+    color: #FFFFFF;
+    background-color: rgb(69, 66, 66);
+}
+
+
+.bx-user:hover {
+    color: rgb(208, 213, 213);
+    cursor: pointer;
+}
+
+.dropdown-content div {
+    display: flex;
+}
+
+.bxs-cog, .bxs-user-account, .bxs-log-out {
+    color: aliceblue;
+    font-size: 14px;
+    margin-left: 5px;
+}

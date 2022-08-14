@@ -1,0 +1,39 @@
+.side-bar {
+    background-color: #232323;
+    position: fixed;
+    top: 44px;
+    width: 60px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.coconut-icon {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    left: 5px;
+}
+
+.sidebar-link {
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    flex-direction: column;
+}
+
+    .sidebar-link img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .sidebar-link p {
+        font-size: 16px;
+        color: aliceblue;
+        margin-top: 3px;
+    }
+
+    .sidebar-link:hover {
+        background-color: rgb(49, 47, 47);
+    }

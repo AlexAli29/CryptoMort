@@ -1,0 +1,25 @@
+:root {
+    --white: aliceblue;
+}
+body{
+  margin: 0;
+  background-color:#181818;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif, Times, serif;  
+  padding-left: 45px;
+  padding-top: 50px; 
+  
+  
+}
+
+a
+{
+    color:aliceblue;
+}
+
+p {
+  display: block;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}

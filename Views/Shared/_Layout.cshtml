@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CryptoMort</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet' >
+
+     
+    <link rel="stylesheet" href="~/css/header.css" asp-append-version="true" />
+
+    
+    <link rel="stylesheet" href="~/css/general.css" asp-append-version="true" />
+    
+   
+    <link rel="stylesheet" href="~/css/sidebar.css" asp-append-version="true" />
+ 
+    <link rel="stylesheet" href="~/css/page-content-container.css" asp-append-version="true" />
+    
+    <link rel="stylesheet" href="~/css/coins-table.css" asp-append-version="true" />
+
+    <link rel="stylesheet" href="~/CryptoStockMVC.styles.css" asp-append-version="true" />
+ 
+</head>
+<body>
+    <header>
+        <div class="nav-bar ">
+
+             <div class="start">
+              <img class="mort-img" src="https://www.shareicon.net/data/2016/05/16/766013_zoo_512x512.png">
+               <p class="label">Crypto-Mort</p>
+             </div>
+
+             <div class="middle">              
+                <form asp-controller="Home" asp-action="Index" method="get" class="search-form"> 
+                 <div class="search-bar-container">
+                    <input class="search-bar" type="text" placeholder="Search" name="search">
+                    <button class="search-button" type="submit">
+                      <i class='bx bx-search'></i>
+                     </button>  
+                      </div> 
+                 </form>               
+                   
+            </div>          
+
+            <div class="end">
+            <div class="chooselang-container" style="display: flex;">
+              <p class="language-name">English</p>
+              <i class='bx bxs-down-arrow'></i>
+            </div>
+            <div class="choosecurrency-container" style="display: flex;">
+              <i class='bx bxs-dollar-circle'></i>
+              <p class="currency-name">USD</p>
+              <i class='bx bxs-down-arrow'></i>
+            </div>
+            <div class="notification-container" style="display: flex;">              
+              <i class='bx bx-bell'></i>
+            </div>
+            <div class="account-container" style="display: flex;">
+              <i class='bx bx-user'></i>
+              <div class="dropdown-content">
+                <div class="dc-a">
+                  <i class='bx bxs-user-account'></i>
+                  <a href="#">Account</a>
+                </div>
+                <div class="dc-a">
+                  <i class='bx bxs-cog'></i>
+                  <a href="#">Settings</a>
+                </div>  
+                <div class="dc-a">
+                  <i class='bx bxs-log-out'></i>
+                  <a href="#">Log out</a>
+                </div>            
+              </div>
+            </div>            
+          </div>
+         </div>
+
+          <div class="side-bar">
+          <div class="sidebar-link"> <img src="/images/mango.png">
+          <p>Coins</p>
+          </div>
+          <div class="sidebar-link"><img src="/images/banana.png">
+            <p>Exchange</p>
+        </div>
+          <div class="sidebar-link"><img src="/images/coconut.png">
+            <p>Brokers</p>
+          </div>         
+          <div class="sidebar-link">
+            <img src="/images/avocado.png">
+            <p>Tools</p>
+            </div>               
+         </div>   
+
+
+
+           </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+   
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>   
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

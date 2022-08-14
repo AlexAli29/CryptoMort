@@ -1,0 +1,86 @@
+.stickytop {
+    color: var(--white);
+    position: sticky;
+}
+
+.table-content {
+    color: var(--white);
+}
+
+
+.coins-table {
+    width: 75%;
+    font-size: 15px;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: #181818;
+    ;
+    ;
+    border-spacing: 5px;
+    border-radius: 15px;
+}
+
+thead {
+    position: relative;
+    display: table-header-group;
+    vertical-align: middle;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+}
+
+th {
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px 0px 1px 0px;
+}
+
+td {
+    padding: 10px;
+    background-color: #181818;
+    ;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+}
+
+th, td {
+    border-color: #222222;
+}
+
+.thead-label {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 23px;
+    -webkit-box-pack: end;
+}
+
+.table-content-container {
+    display: flex;
+    -webkit-box-align: center;
+    justify-content: flex-end;
+    height: 23px;
+    align-items: center;
+}
+
+.alies-tb {
+    margin-left: 3px;
+    font-size: 10px;
+    color: rgb(152, 159, 165);
+}
+
+.change-index {
+    color: green;
+}
+
+.bxs-up-arrow {
+    font-size: 11px;
+}
+
+.coin-logo-table {
+    height: 16px;
+    margin-right: 3px;
+}

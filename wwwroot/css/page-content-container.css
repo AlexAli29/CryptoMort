@@ -1,0 +1,163 @@
+.top-label-container
+{
+  
+  display: flex;
+  background-color:transparent;
+  top: -4px;
+  left:-5px;    
+  margin-bottom:13px;
+  justify-content:center;
+  margin-top:5px;
+  
+}
+
+.top-label-container p
+{
+  color: aliceblue;
+  font-size:20px;
+}
+
+.top-currencies
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+  justify-items: center;
+  margin-bottom:16px;
+
+}
+
+.bestgain
+{
+  background-color:blue;
+  
+}
+
+.tbr
+{
+  border-radius:5px;
+  background-color:#232323;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 16px 17px;
+  color:aliceblue;
+  width: 192px;
+}
+
+.fire-img 
+{
+  height: 19px;
+}
+
+
+
+.recentlyadded
+{
+  background-color: bisque;
+}
+
+.tbr-header
+{
+  display: flex;
+  flex:1;
+  height:19px;  
+  font-size: 15px;
+  align-items:center;
+  position: relative;
+  font-size:20px
+  
+}
+
+.tbr-content
+{
+  display: flex;
+  font-size: 11px;
+  padding-left: 4px;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+
+.tbr-pos-container
+{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;  
+}
+
+.trend-pos
+{
+  display: grid;
+  grid-template-columns: 8px auto 1fr;
+  align-items:center;
+  column-gap: 3px;
+  
+}
+
+.coin-name
+{
+  line-height: 24px;
+  font-size:14px
+}
+.coin-logo
+{
+  height:12px;
+  margin-right: 3px;
+}
+
+
+
+.coin-name-img
+{
+  display: flex;
+  align-items:center;
+}
+
+.alias
+{
+  font-size: 7px;
+  justify-items: center;
+  color: antiquewhite;
+}
+
+.more-link
+{
+  display:flex;
+  color: rgb(84, 87, 97);
+  text-decoration:underline;
+  cursor: pointer;
+  align-items:center;
+  font-size: 10px;
+ position: absolute;
+ right: 0px;
+  
+}
+
+.more-link:hover
+{
+  color: rgb(99, 101, 107);
+}
+
+.bx-chevron-right
+{
+  font-size: 10px;
+}
+
+.gain-img, .recently-img
+{
+  height: 19px;
+  margin-right: 5px;
+}
+
+.top-name
+{
+  display: flex;  
+  white-space: nowrap;
+}
+
+.price-change .bxs-down-arrow
+{
+  margin-right: 0px;
+  margin-left: 0px;
+  color:red;
+}

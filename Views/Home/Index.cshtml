@@ -1,0 +1,267 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model IEnumerable<Coin> 
+@inject CoinImages coinimages
+
+ <div class="top-label-container">
+          <p>Today's Cryptocurrency Prices by Market Cap</p>
+          </div>
+
+          <div class="top-currencies">
+              @*Trending*@
+            <div class="tbr">
+
+            <div class="tbr-header">
+              <img class="fire-img" src="https://s2.coinmarketcap.com/static/cloud/img/TrendingIcon.png?_=387dcbf" loading="lazy">
+              <span class="top-name">Trending</span>
+
+              <a href="#"class="more-link">More <i class='bx bx-chevron-right'></i></a>
+            </div>
+               
+            <div class="tbr-content">
+            <div class="tbr-pos-container">           
+              <div class="trend-pos">
+                <span>
+                  1
+                </span>
+                <div class="coin-name-img">
+                  <img class="coin-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png" loading="lazy" alt="undefined logo">
+                  <p class="coin-name">Etherium</p>
+                 
+                </div>
+               
+                <span class="alias">ETH</span>
+              </div>
+              <div class="price-change">
+                <i class='bx bxs-down-arrow'></i>
+                <span>5 %</span>
+                
+              </div>
+            </div>
+            <div class="tbr-pos-container">
+              <div class="trend-pos">
+                <span>
+                  2
+                </span>
+                <div class="coin-name-img">
+                  <img class="coin-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png" loading="lazy" alt="undefined logo">
+                  <p class="coin-name">Bitcoin</p>
+                </div>
+               
+                <span class="alias">BTC</span>
+              </div>
+               </div>
+            <div class="tbr-pos-container">
+              <div class="trend-pos">
+                <span>
+                  2
+                </span>
+                <div class="coin-name-img">
+                  <img class="coin-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png" loading="lazy" alt="undefined logo">
+                  <p class="coin-name">Cardano</p>
+                </div>
+               
+                <span class="alias">ADA</span>
+              </div>
+            </div>
+            </div>
+              
+            </div>
+
+            @*Biggest gainers*@
+            <div class="tbr">
+
+            <div class="tbr-header">
+              <img class="gain-img" src="https://s2.coinmarketcap.com/static/cloud/img/GainnerIcon.png?_=aef4fa4" loading="lazy" />
+              <span class="top-name">Biggest Gainers</span>
+
+              <a href="#"class="more-link">More <i class='bx bx-chevron-right'></i></a>
+            </div>
+               
+            <div class="tbr-content">
+            <div class="tbr-pos-container">           
+              <div class="trend-pos">
+                <span>
+                  1
+                </span>
+                <div class="coin-name-img">
+                  <img class="coin-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png" loading="lazy" alt="undefined logo">
+                  <p class="coin-name">Etherium</p>
+                 
+                </div>
+               
+                <span class="alias">ETH</span>
+              </div>
+              <div class="price-change">
+                <i class='bx bxs-down-arrow'></i>
+                <span>5 %</span>
+                
+              </div>
+            </div>
+            <div class="tbr-pos-container">
+              <div class="trend-pos">
+                <span>
+                  2
+                </span>
+                <div class="coin-name-img">
+                  <img class="coin-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png" loading="lazy" alt="undefined logo">
+                  <p class="coin-name">Bitcoin</p>
+                </div>
+               
+                <span class="alias">BTC</span>
+              </div>
+               </div>
+            <div class="tbr-pos-container">
+              <div class="trend-pos">
+                <span>
+                  2
+                </span>
+                <div class="coin-name-img">
+                  <img class="coin-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png" loading="lazy" alt="undefined logo">
+                  <p class="coin-name">Cardano</p>
+                </div>
+               
+                <span class="alias">ADA</span>
+              </div>
+            </div>
+            </div>
+              
+            </div>
+            
+            @*Recently added*@
+             <div class="tbr">
+
+            <div class="tbr-header">
+              <img class="recently-img" src="https://s2.coinmarketcap.com/static/cloud/img/AddIcon.png?_=387dcbf" loading="lazy">
+              <span class="top-name">Recently added</span>
+
+              <a href="#"class="more-link">More <i class='bx bx-chevron-right'></i></a>
+            </div>
+               
+            <div class="tbr-content">
+            <div class="tbr-pos-container">           
+              <div class="trend-pos">
+                <span>
+                  1
+                </span>
+                <div class="coin-name-img">
+                  <img class="coin-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png" loading="lazy" alt="undefined logo">
+                  <p class="coin-name">Etherium</p>
+                 
+                </div>
+               
+                <span class="alias">ETH</span>
+              </div>
+              <div class="price-change">
+                <i class='bx bxs-down-arrow'></i>
+                <span>5 %</span>
+                
+              </div>
+            </div>
+            <div class="tbr-pos-container">
+              <div class="trend-pos">
+                <span>
+                  2
+                </span>
+                <div class="coin-name-img">
+                  <img class="coin-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png" loading="lazy" alt="undefined logo">
+                  <p class="coin-name">Bitcoin</p>
+                </div>
+               
+                <span class="alias">BTC</span>
+              </div>
+               </div>
+            <div class="tbr-pos-container">
+              <div class="trend-pos">
+                <span>
+                  2
+                </span>
+                <div class="coin-name-img">
+                  <img class="coin-logo" src="https://s2.coinmarketcap.com/static/img/coins/64x64/1027.png" loading="lazy" alt="undefined logo">
+                  <p class="coin-name">Cardano</p>
+                </div>
+               
+                <span class="alias">ADA</span>
+              </div>
+            </div>
+            </div>
+              
+            </div>
+          </div>    
+
+          @*Coins-table*@
+          <div class="cointable-container  ">
+            <table class = "coins-table">
+              <thead>
+                <tr>
+                    <th class="stickytop"></th>
+                    <th class="stickytop" style="text-align:left">
+                      <div class="thead-label">
+                        #
+                      </div>
+                    </th>
+                    <th class="stickytop" style="text-align:left">
+                      <div class="thead-label">
+                        Name
+                      </div>
+                    </th>
+                    <th class="stickytop" style="text-align:right">
+                      <div class="thead-label">
+                        Price
+                      </div>
+                    </th>
+                    <th class="stickytop" style="text-align:right">
+                      <div class="thead-label">
+                        24h %
+                      </div>
+                    </th>
+                    <th class="stickytop" style="text-align:center; width:30%">
+                     
+                        Last 7 days
+                      
+                    </th>                  
+                </tr>
+            </thead>
+           @{int i = 1;} 
+           @foreach (var obj in Model)
+           {
+
+                <tr class="table-content">
+             <td><div></div></td> 
+            <td>
+              <div class="table-content-container" style="justify-content:flex-start ">
+                @i
+              </div>
+             </td> 
+             <td>
+              <div class="table-content-container" style="justify-content:flex-start">
+                <img class="coin-logo-table" src="@coinimages.GetPath(obj.Symbol)" loading="lazy" alt="undefined logo">
+                    @obj.Name 
+                <span class="alies-tb">@obj.Symbol</span>
+              </div>
+             </td> 
+             <td>
+              <div class="table-content-container" style="justify-content:flex-start">
+                @Math.Round(obj.Quote["USD"].Price,4)$
+              </div>
+             </td> 
+             <td>
+              <div class="table-content-container" style="justify-content:flex-start">
+                <span class="change-index"> <i class='bx bxs-up-arrow'></i> ?</span>
+              </div>
+             </td> 
+
+             <td>
+              <div class="table-content-container" style="justify-content:center">
+                graphic
+              </div>
+             </td> 
+            </tr>
+            
+                i++;
+            
+           }
+           
+          </table>
+         </div>
