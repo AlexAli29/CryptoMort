@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -53,33 +57,44 @@
               <p class="currency-name">USD</p>
               <i class='bx bxs-down-arrow'></i>
             </div>
-            <div class="notification-container" style="display: flex;">              
-              <i class='bx bx-bell'></i>
-            </div>
-            <div class="account-container" style="display: flex;">
-              <i class='bx bx-user'></i>
-              <div class="dropdown-content">
-                <div class="dc-a">
-                  <i class='bx bxs-user-account'></i>
-                  <a href="#">Account</a>
+            <div class="nothification-dropdown" data-dropdown style="display: flex;">             
+              <button class="bx bx-bell" data-dropdown-button></button>
+              <div class="dropdown-menu">
+                <div class="dc-n">Mort is hungry!</div>                
                 </div>
-                <div class="dc-a">
-                  <i class='bx bxs-cog'></i>
-                  <a href="#">Settings</a>
+              </div>
+
+            <div class="account-dropdown" data-dropdown style="display: flex;">
+               @if( SignInManager.IsSignedIn(User))
+                    {
+                        <button class="bx bx-user" data-dropdown-button></button>
+                    }
+                    else
+                    {
+                         <a asp-controller="Home" asp-action="Login" method ="post"><button class="bx bxs-log-in" login-button></button></a>
+                    }                  
+              <div class="dropdown-menu">
+                <div class="dc-a">                  
+                  <a asp-controller="User" asp-action="Index" class="bx bxs-user-account"><span>@(User.Identity.Name)
+                  </span></a>
+                </div>
+                <div class="dc-a">                  
+                  <a href"#"  class="bx bxs-cog"><span>Settings</span></a>
                 </div>  
-                <div class="dc-a">
-                  <i class='bx bxs-log-out'></i>
-                  <a href="#">Log out</a>
-                </div>            
+                <div class="dc-a">                  
+                  <a asp-controller="Home" asp-action="Logout" method ="get"  class="bx bxs-log-out"><span>Log out</span></a>                
+              </div>               
+                </div>
               </div>
             </div>            
           </div>
          </div>
 
           <div class="side-bar">
-          <div class="sidebar-link"> <img src="/images/mango.png">
-          <p>Coins</p>
-          </div>
+          <a asp-controller="Home" asp-action="Index" >
+            <div class="sidebar-link"> <img src="/images/mango.png">
+                <p>Coins</p>
+            </div></a>
           <div class="sidebar-link"><img src="/images/banana.png">
             <p>Exchange</p>
         </div>
@@ -101,7 +116,7 @@
         </main>
     </div>
 
-   
+    <script src="/js/crypto-mort.js"</script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>   
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)

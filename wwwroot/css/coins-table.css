@@ -76,9 +76,9 @@ th, td {
     color: green;
 }
 
-.bxs-up-arrow {
-    font-size: 11px;
-}
+.change-index .bxs-up-arrow, .bxs-down-arrow {
+        font-size: 10px;
+    }
 
 .coin-logo-table {
     height: 16px;

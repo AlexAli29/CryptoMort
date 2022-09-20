@@ -37,3 +37,6 @@
     .sidebar-link:hover {
         background-color: rgb(49, 47, 47);
     }
+    a{
+        text-decoration:none;
+    }

@@ -1,5 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    var user = ViewData["user"] as User;
 }
 @model IEnumerable<Coin> 
 @inject CoinImages coinimages
@@ -216,6 +217,11 @@
                         24h %
                       </div>
                     </th>
+                    <th class="stickytop" style="text-align:right ">
+                      <div class="thead-label">
+                        Maket cap
+                      </div>
+                    </th>
                     <th class="stickytop" style="text-align:center; width:30%">
                      
                         Last 7 days
@@ -243,12 +249,22 @@
              </td> 
              <td>
               <div class="table-content-container" style="justify-content:flex-start">
-                @Math.Round(obj.Quote["USD"].Price,4)$
+                @Math.Round(obj.Quote["USD"].Price,4) $
               </div>
              </td> 
              <td>
-              <div class="table-content-container" style="justify-content:flex-start">
-                <span class="change-index"> <i class='bx bxs-up-arrow'></i> ?</span>
+              <div class="table-content-container" style="justify-content:flex-start">                  
+                 <span class="change-index" style="color:@(obj.Quote["USD"].Percent_change_24h < 0 ? "red" : "green")">
+                        <i class='@(obj.Quote["USD"].Percent_change_24h < 0 ? "bx bxs-down-arrow" : "bx bxs-up-arrow")'></i>  
+                        @Math.Round(obj.Quote["USD"].Percent_change_24h,2) %
+                 </span>
+                                          
+              </div>
+             </td> 
+
+             <td>
+              <div class="table-content-container" style="justify-content:start">
+                @Math.Round(obj.Quote["USD"].Market_cap,2) $
               </div>
              </td> 
 
