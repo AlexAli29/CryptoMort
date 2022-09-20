@@ -1,0 +1,56 @@
+﻿@model User
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/css/login-signup-page.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="center">
+    <h1>Sign up</h1>
+     <form asp-controller="Home" asp-action="Signup" method="post">
+
+      <div class="personal-image">
+        <label class="label">
+          <input type="file" />
+          <figure class="personal-figure">
+            <img src="https://avatars1.githubusercontent.com/u/11435231?s=460&v=4" class="personal-avatar" alt="avatar">
+            <figcaption class="personal-figcaption">
+              <img src="https://raw.githubusercontent.com/ThiagoLuizNunes/angular-boilerplate/master/src/assets/imgs/camera-white.png">
+            </figcaption>
+          </figure>
+        </label>
+      </div>  
+
+      <div class="txt_field">
+        <input type="text" asp-for="UserName" name="UserName" required>
+        <span></span>
+        <label>Username</label>
+      </div>
+
+      <div class="txt_field">
+        <input type="email"  name="email" required>
+        <span></span>
+        <label>Email</label>
+      </div>
+
+      <div class="txt_field">
+        <input type="password"  name="password" required>
+        <span></span>
+        <label>Password</label>
+      </div>
+      
+      <div class="pass">Forgot Password?</div>
+      <input type="submit" value="Sign up">
+      <div class="signup_link">
+        Already have an account? <a href="#">Log in</a>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
