@@ -6,5 +6,14 @@ namespace CryptoStockMVC.Models
         public string? ImagePath { get; set; }
 
         public IFormFile? Image { get; set; }
+
+        public static User CreateUser ()
+        {
+            return new User
+            {
+               
+            
+            };
+        }
     }
 }
